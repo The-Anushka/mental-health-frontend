@@ -7,7 +7,7 @@ const AnalyzeForm = () => {
 
   const handleAnalyze = async () => {
     try {
-      const response = await fetch("http://localhost:5000/analyze", {
+      const response = await fetch("https://mental-health-backend-h40i.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
